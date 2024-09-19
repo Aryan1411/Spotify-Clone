@@ -26,7 +26,7 @@ body{
     width: 25px;
 }
 .library{
-    min-height: 50vh ;
+    min-height: 78vh ;
     position:relative;
 }
 .footer{
@@ -38,6 +38,7 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0px;
+    padding: 10px;
 
 }
 .footer a{
@@ -45,9 +46,49 @@ body{
 }
 .header{
 justify-content: space-between;
+background-color: rgb(40, 38, 38);
 }
 .header *{
-    padding: 15px;
+    padding: 10px;
+}
+.playlist{
+    padding: 10px;
+    min-height: 85vh;
+}
+.cardContainer{
+    margin: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.play{
+    display: flex; justify-content: center; align-items: center; 
+                            width: 30px; height: 30px; 
+                            background-color: #1fbf64; 
+                            border-radius: 50%; 
+                            padding: 10px;
+                            position: absolute;
+                            top: 164px;
+                            right: 14px;
+                            opacity: 0;
+                            transition: all 1s ease-out;
+
+                            
+}
+.card{
+    width:200px;
+    height: 280px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #252525;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card > *{
+    padding-top: 5px;
 }
 
 .left{
